@@ -1,7 +1,7 @@
 /* ============================================================
    哈哈 · 开源雷达
    Design: deep-space terminal / phosphor HUD
-   Accent: electric blue #4D8DFF · violet #8B5CFF
+   Accent: champagne gold #E9C68C · rose gold #C9829A
    ============================================================ */
 
 :root {
@@ -10,13 +10,13 @@
   --panel: #0e1117;
   --panel-2: #12161d;
   --line: rgba(255, 255, 255, 0.08);
-  --line-strong: rgba(91, 140, 255, 0.35);
+  --line-strong: rgba(226, 174, 132, 0.35);
   --text: #e8edf6;
   --text-dim: #93a1b8;
   --text-faint: #5c6b84;
-  --accent: #4d8dff;
-  --accent-2: #8b5cff;
-  --ember: #8b5cff;
+  --accent: #e9c68c;
+  --accent-2: #c9829a;
+  --ember: #c9829a;
   --amber: #ffc247;
   --radius: 8px;
   --radius-sm: 5px;
@@ -40,7 +40,7 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-::selection { background: rgba(91, 140, 255, 0.28); color: #fff; }
+::selection { background: rgba(226, 174, 132, 0.28); color: #fff; }
 
 /* ---------- 背景层 ---------- */
 #bg {
@@ -74,7 +74,7 @@ a { color: inherit; text-decoration: none; }
     to bottom,
     transparent 0,
     transparent 2px,
-    rgba(91, 140, 255, 0.5) 3px,
+    rgba(226, 174, 132, 0.5) 3px,
     transparent 4px
   );
   mix-blend-mode: overlay;
@@ -113,7 +113,7 @@ a { color: inherit; text-decoration: none; }
   color: #0a0d10;
   font-size: 20px;
   font-weight: 800;
-  box-shadow: 0 0 22px rgba(91, 140, 255, 0.35);
+  box-shadow: 0 0 22px rgba(226, 174, 132, 0.35);
 }
 
 .brand-text { font-size: 18px; }
@@ -139,7 +139,7 @@ a { color: inherit; text-decoration: none; }
   width: clamp(96px, 16vw, 144px);
   height: auto;
   border-radius: 20px;
-  filter: drop-shadow(0 12px 42px rgba(91, 140, 255, 0.35));
+  filter: drop-shadow(0 12px 42px rgba(226, 174, 132, 0.35));
 }
 
 .hero {
@@ -160,7 +160,7 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--accent);
   border: 1px solid var(--line-strong);
-  background: rgba(91, 140, 255, 0.08);
+  background: rgba(226, 174, 132, 0.08);
   padding: 6px 14px;
   border-radius: 999px;
   margin-bottom: 26px;
@@ -171,13 +171,13 @@ a { color: inherit; text-decoration: none; }
   height: 7px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 0 rgba(91, 140, 255, 0.6);
+  box-shadow: 0 0 0 0 rgba(226, 174, 132, 0.6);
   animation: pulse 1.8s infinite;
 }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(91, 140, 255, 0.55); }
-  70% { box-shadow: 0 0 0 9px rgba(91, 140, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(91, 140, 255, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(226, 174, 132, 0.55); }
+  70% { box-shadow: 0 0 0 9px rgba(226, 174, 132, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(226, 174, 132, 0); }
 }
 
 .hero-title {
@@ -248,14 +248,14 @@ a { color: inherit; text-decoration: none; }
   gap: 8px;
   margin-top: 46px;
   font-weight: 600;
-  color: #ffffff;
+  color: #2e1a12;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   padding: 13px 26px;
   border-radius: 8px;
-  box-shadow: 0 8px 30px rgba(91, 140, 255, 0.30);
+  box-shadow: 0 8px 30px rgba(226, 174, 132, 0.30);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
-.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(91, 140, 255, 0.42); }
+.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(226, 174, 132, 0.42); }
 
 /* ---------- 雷达主体 ---------- */
 .radar {
@@ -319,7 +319,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--mono);
   font-size: 14px;
   color: var(--text);
-  background: var(--panel) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%234d8dff' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 12px center;
+  background: var(--panel) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23e9c68c' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 12px center;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   padding: 9px 34px 9px 14px;
@@ -390,13 +390,13 @@ a { color: inherit; text-decoration: none; }
 }
 .chip:hover { color: var(--text); border-color: var(--line-strong); transform: translateY(-1px); }
 .chip.active {
-  color: #ffffff;
+  color: #2e1a12;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   border-color: transparent;
   font-weight: 600;
 }
 .chip .dot { width: 8px; height: 8px; border-radius: 50%; }
-.chip.active .dot { background: #ffffff !important; }
+.chip.active .dot { background: #2e1a12 !important; }
 .chip .count {
   font-size: 11px;
   opacity: 0.75;
@@ -425,7 +425,7 @@ a { color: inherit; text-decoration: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(120% 60% at 50% 0%, rgba(91, 140, 255, 0.08), transparent 60%);
+  background: radial-gradient(120% 60% at 50% 0%, rgba(226, 174, 132, 0.08), transparent 60%);
   pointer-events: none;
 }
 

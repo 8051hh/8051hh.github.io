@@ -74,7 +74,7 @@
         if (s.x < 0) s.x = w; else if (s.x > w) s.x = 0;
         if (s.y < 0) s.y = h; else if (s.y > h) s.y = 0;
         ctx.globalAlpha = s.a;
-        ctx.fillStyle = '#4d8dff';
+        ctx.fillStyle = '#e9c68c';
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
         ctx.fill();
@@ -82,7 +82,7 @@
 
       // 连线（近邻）
       ctx.globalAlpha = 0.05;
-      ctx.strokeStyle = '#4d8dff';
+      ctx.strokeStyle = '#e9c68c';
       const linkDist = 130;
       for (let i = 0; i < stars.length; i++) {
         for (let j = i + 1; j < stars.length; j++) {
