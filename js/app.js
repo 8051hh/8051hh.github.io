@@ -41,9 +41,10 @@
     let w = 0, h = 0, dpr = 1, stars = [], raf = null;
 
     function resize() {
+      const parent = canvas.parentElement;
       dpr = Math.min(window.devicePixelRatio || 1, 2);
-      w = window.innerWidth;
-      h = window.innerHeight;
+      w = parent ? parent.clientWidth : window.innerWidth;
+      h = parent ? parent.clientHeight : window.innerHeight;
       canvas.width = w * dpr;
       canvas.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
