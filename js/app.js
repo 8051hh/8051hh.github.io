@@ -75,7 +75,7 @@
         if (s.x < 0) s.x = w; else if (s.x > w) s.x = 0;
         if (s.y < 0) s.y = h; else if (s.y > h) s.y = 0;
         ctx.globalAlpha = s.a;
-        ctx.fillStyle = '#f7dba7';
+        ctx.fillStyle = '#6ee7d8';
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
         ctx.fill();
@@ -83,7 +83,7 @@
 
       // 连线（近邻）
       ctx.globalAlpha = 0.05;
-      ctx.strokeStyle = '#f7dba7';
+      ctx.strokeStyle = '#6ee7d8';
       const linkDist = 130;
       for (let i = 0; i < stars.length; i++) {
         for (let j = i + 1; j < stars.length; j++) {
@@ -262,7 +262,7 @@
       return '<article class="spot-card reveal">' + media +
         '<div class="spot-body">' +
           '<div class="spot-top"><span class="spot-idx"># ' + String(p.num).padStart(2, '0') + '</span>' +
-          '<span class="spot-tag" style="color:' + langColor + '">' + escapeHtml(p.lang) + '</span></div>' +
+          '<span class="spot-tag" style="background:' + langColor + '26">' + escapeHtml(p.lang) + '</span></div>' +
           '<h3 class="spot-name">' + escapeHtml(p.name) + '</h3>' +
           '<p class="spot-desc">' + escapeHtml(cleanDesc(p.desc)) + '</p>' +
           '<a class="spot-link" href="' + escapeHtml(p.repoUrl || p.url) + '" target="_blank" rel="noopener">打开仓库 ↗</a>' +
@@ -276,7 +276,7 @@
     return '<article class="card reveal">' + media +
       '<div class="card-body">' +
         '<div class="card-meta">' +
-          '<span class="lang-badge"><span class="dot" style="background:' + langColor + '"></span>' + escapeHtml(p.lang) + '</span>' +
+          '<span class="lang-badge" style="background:' + langColor + '26">' + escapeHtml(p.lang) + '</span>' +
           '<span class="card-idx">#' + String(p.num).padStart(2, '0') + '</span>' +
         '</div>' +
         '<h3 class="card-name">' + escapeHtml(p.name) + '</h3>' +
